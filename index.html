@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <h1>Currency converter</h1>
+    <main>
+      <div class="initial_currency" id="initial_currency">
+        <select id="select_initial_currency" class="select_initial_currency">
+          <option value="select" hidden>Select currency</option>
+          <option value="USD" id="USD_init">USD</option>
+          <option value="EUR" id="EUR_init">EUR</option>
+          <option value="RUB" id="RUB_init">RUB</option>
+          <option value="AZN" id="AZN_init">AZN</option>
+        </select>
+        <input
+          type="number"
+          id="initial_currency_input"
+          class="initial_currency_input"
+          placeholder="Enter value..."
+        />
+      </div>
+
+      <button
+        class="convert_btn"
+        id="convert_btn"
+        onclick="calculateCurrency()"
+      >
+        Convert
+      </button>
+
+      <div class="result_currency" id="result_currency" class="result_currency">
+        <select id="select_result_currency" class="select_result_currency">
+          <option value="select" hidden>Select currency</option>
+          <option value="USD" id="USD_res">USD</option>
+          <option value="EUR" id="EUR_res">EUR</option>
+          <option value="RUB" id="RUB_res">RUB</option>
+          <option value="AZN" id="AZN_res">AZN</option>
+        </select>
+        <input
+          type="number"
+          name=""
+          id="result_currency_input"
+          class="result_currency_input"
+        />
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
